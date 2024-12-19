@@ -1,0 +1,98 @@
+/* إعدادات الصفحة العامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* الجسم العام للصفحة */
+body {
+    background: linear-gradient(to right, #2b2d42, #8d99ae); /* تدرج لوني من الأزرق الداكن إلى الرمادي الفاتح */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* حاوية الصفحة الرئيسية */
+.container {
+    background:linear-gradient(to bottom right, #1a202c, #2d3748);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* رأس الصفحة */
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: gold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* تنسيق الحقول */
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* تأثير عند التمرير فوق الحقول */
+.input-field:focus {
+    border-color: gold;
+    box-shadow: 0 0 5px gold;
+    outline: none;
+}
+
+/* تنسيق الروابط */
+.log0, .log1 {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.log0:hover, .log1:hover {
+    color: gold;
+}
+
+/* زر تسجيل الدخول */
+.log {
+    display: inline-block;
+    background-color: #ff6700;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* تأثير عند التمرير فوق زر تسجيل الدخول */
+.log:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+}
+
+/* تأثير عند التمرير فوق زر تسجيل الدخول */
+.log:active {
+    transform: scale(0.98);
+}

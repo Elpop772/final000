@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- تحديد ترميز الصفحة -->
+    <meta charset="utf-8" />
+    <!-- ضمان استجابة الصفحة لأحجام الشاشات المختلفة -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- عنوان الصفحة -->
+    <title>about</title>
+    <!-- وصف الصفحة لتحسين SEO -->
+    <meta name="description"
+          content="This site is a simple site to help people understand the meaning of physical exercises and how important sports are in our lives" />
+    <!-- ربط ملف CSS الرئيسي -->
+    <link rel="stylesheet" href="css/master.css" />
+    <!-- ربط ملف normalize.css لضبط الأنماط الافتراضية -->
+    <link rel="stylesheet" href="css/normalize.css" />
+</head>
+<body>
+    <!-- بداية الهيدر -->
+    <header>
+        <!-- شريط التنقل -->
+        <div class="navbar">
+            <!-- شعار الموقع -->
+            <img src="imgs/logop.png" alt="logo site" />
+            <nav>
+                <ul>
+                    <!-- روابط قائمة التنقل -->
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="sports.html">sports</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- بداية قسم اللعبة -->
+    <div class="game">
+        <script>
+            // وظيفة لتحديد الرياضة المناسبة بناءً على التفضيل
+            function chooseSport(preference) {
+                let suggestion;
+                if (preference === 'individual') {
+                    // اقتراح رياضات فردية
+                    suggestion = "We recommend sports such as: hammer throwing, archery, or swimming!";
+                } else if (preference === 'team') {
+                    // اقتراح رياضات جماعية
+                    suggestion = "We recommend team sports such as: ironball, football, basketball, or obstacle course!";
+                }
+                // عرض الاقتراح في العنصر المحدد
+                document.getElementById('sport-suggestion').innerText = suggestion;
+                // إخفاء القسم الأول وعرض النتيجة
+                document.getElementById('quiz').style.display = 'none';
+                document.getElementById('result').style.display = 'block';
+            }
+
+            // وظيفة لحساب السعرات الحرارية المحروقة
+            function calculateCalories() {
+                const minutes = document.getElementById('minutes').value; // مدة التمرين
+                const caloriesBurnedPerMinute = 7; // عدد السعرات المحروقة في الدقيقة
+                const totalCalories = minutes * caloriesBurnedPerMinute; // حساب السعرات الإجمالية
+
+                // عرض النتيجة في العنصر المحدد
+                document.getElementById('calories-result').innerText =
+                    `calories burned: ${totalCalories} Calories`;
+            }
+        </script>
+        <!-- عنوان السؤال -->
+        <h1>What sport is right for you?</h1>
+        <div id="quiz">
+            <p>Do you prefer individual or team sports?</p>
+            <!-- أزرار لاختيار نوع الرياضة -->
+            <button class="btn-game" onclick="chooseSport('individual')">Individual</button>
+            <button class="btn-game" onclick="chooseSport('team')">Collective</button>
+        </div>
+        <!-- عرض النتيجة -->
+        <div id="result" style="display: none;">
+            <h2>result:</h2>
+            <p id="sport-suggestion"></p>
+        </div>
+        <!-- ربط ملف JavaScript إضافي (إن وجد) -->
+        <script src="script.js"></script>
+    </div>
+    <!-- بداية قسم حاسبة السعرات الحرارية -->
+    <div class="fit">
+        <h2>Calorie burn calculator</h2>
+        <p>Enter the duration of the exercise in minutes:</p>
+        <!-- حقل إدخال للمدة -->
+        <input type="number" id="minutes" placeholder="Duration of exercise">
+        <!-- زر لحساب السعرات -->
+        <button class="btn-game" onclick="calculateCalories()">Calculate</button>
+        <!-- عرض نتيجة السعرات -->
+        <p id="calories-result"></p>
+    </div>
+    <!-- بداية قسم المعلومات حول الألعاب البدنية -->
+    <section id="about"></section>
+    <section class="about">
+        <h2 class="h1-game">About Physical Games</h2>
+        <!-- فقرة عن الألعاب البدنية -->
+        <p>Physical games are activities that engage the body and mind, providing both physical fitness and enjoyment. From team sports to individual activities, these games promote health and wellness.</p>
+        <h3>Importance of Physical Games</h3>
+        <!-- فقرة عن أهمية الألعاب البدنية -->
+        <p>Engaging in sports helps build teamwork, enhance coordination, and develop essential life skills.</p>
+        <h3>Types of Sports</h3>
+        <!-- قائمة بأنواع الرياضات -->
+        <ul>
+            <li>ironball</li>
+            <li>Basketball</li>
+            <li>obstacle-race</li>
+            <li>hammer-throw</li>
+            <li>football</li>
+            <li>archery</li>
+            <li>Swimming</li>
+        </ul>
+        <h3>Health Benefits</h3>
+        <!-- فقرة عن فوائد الألعاب البدنية -->
+        <p>Physical games improve cardiovascular health, strengthen muscles, and reduce stress.</p>
+        <!-- زر للانتقال إلى الصفحة التالية -->
+        <a href="sports.html" class="next-btn1">next page</a>
+    </section>
+</body>
+</html>

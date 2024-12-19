@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- تحديد ترميز الصفحة -->
+    <meta charset="utf-8" />
+    <!-- ضمان استجابة الصفحة لأحجام الشاشات المختلفة -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- عنوان الصفحة -->
+    <title>sports</title>
+    <!-- وصف الصفحة لتحسين SEO -->
+    <meta name="description"
+          content="This site is a simple site to help people understand the meaning of physical exercises and how important sports are in our lives" />
+    <!-- ربط ملف CSS الرئيسي -->
+    <link rel="stylesheet" href="css/master.css" />
+    <!-- ربط ملف normalize.css لضبط الأنماط الافتراضية -->
+    <link rel="stylesheet" href="css/normalize.css" />
+</head>
+<body>
+    <!-- تضمين وظيفة JavaScript للتحقق من إدخال البيانات -->
+    <script>
+        function showThankYouMessage() {
+            // الحصول على القيم المدخلة في الحقول
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // التحقق من أن جميع الحقول معبأة
+            if (fullName && email && message) {
+                // عرض رسالة شكر
+                alert(`Thank you, ${fullName}, for reaching out to us! We will respond to your message at ${email} as soon as possible.`);
+                // إعادة تعيين الحقول بعد الإرسال
+                document.getElementById('contactForm').reset();
+            } else {
+                // عرض تحذير إذا لم يتم تعبئة جميع الحقول
+                alert('Please fill in all fields before submitting!');
+            }
+        }
+    </script>
+    <!-- قسم الصفحة الرئيسي -->
+    <section id="home"></section>
+    <header>
+        <!-- شريط التنقل -->
+        <div class="navbar">
+            <!-- شعار الموقع -->
+            <img src=" imgs/logop.png" alt="logo site" />
+            <nav>
+                <ul>
+                    <!-- روابط قائمة التنقل -->
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="sports.html">sports</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="contact"></section>
+    <!-- حاوية المحتوى الرئيسية -->
+    <div class="container">
+        <!-- شارة المجموعة -->
+        <div class="responsive-badge">Group49</div>
+        <div class="content">
+            <h1>Contact Us</h1>
+            <p class="title">We are happy to contact you at any time</p>
+            <!-- قسم معلومات الاتصال -->
+            <div class="contact-container">
+                <div class="contact-info">
+                    <!-- عنصر معلومات العنوان -->
+                    <div class="contact-item">
+                        <div class="icon">
+                            <!-- أيقونة العنوان -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00b5d8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Address</h3>
+                            <p>Sva<br>Elobor City</p>
+                        </div>
+                    </div>
+                    <!-- عنصر معلومات الهاتف -->
+                    <div class="contact-item">
+                        <div class="icon">
+                            <!-- أيقونة الهاتف -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00b5d8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>01145093313</p>
+                        </div>
+                    </div>
+                    <!-- عنصر معلومات البريد الإلكتروني -->
+                    <div class="contact-item">
+                        <div class="icon">
+                            <!-- أيقونة البريد الإلكتروني -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00b5d8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>Group49 Sva@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- قسم نموذج الاتصال -->
+                <div class="contact-form">
+                    <h2>Send Message</h2>
+                    <form id="contactForm">
+                        <!-- إدخال الاسم الكامل -->
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <!-- إدخال البريد الإلكتروني -->
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <!-- إدخال الرسالة -->
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <!-- زر الإرسال -->
+                        <button type="button" onclick="showThankYouMessage()">submit</button>
+                    </form>
+                </div>
+            </div>
+            <!-- قسم حقوق الملكية -->
+            <div class="copy">
+                <p>Thank you For Contact us Group 49.</p>
+                <p>CopyRight &copy; Group 49.</p>
+            </div>
+        </div>
+</body>
+</html>
+<!-- نهاية قسم الاتصال -->

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- إعدادات الرأس -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports</title>
+    <meta name="description" content="This site is a simple site to help people understand the meaning of physical exercises and how important sports are in our lives" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <style>
+        /* إعدادات الأنماط الافتراضية للصور المتحركة */
+        .animated-img {
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* حركة سلسة */
+        }
+
+            /* تأثير عند تمرير المؤشر */
+            .animated-img:hover {
+                transform: scale(1.1); /* تكبير الصورة بشكل طفيف */
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* إضافة ظل */
+            }
+
+        /* الحفاظ على استجابة الصور */
+        .ironballimg, .basketballimg, .obstacle-raceimg, .hammer-throwimg, .footballimg {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <header>
+        <div class="navbar">
+            <img src="imgs/logop.png" alt="Logo of the sports website" />
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- قسم لعبة الكرة الحديدية -->
+        <section class="ironball animated-section">
+            <div class="container">
+                <div class="title"><h2>Iron Ball</h2></div>
+                <div class="preview">
+                    <div>
+                        <p>Definition: An outdoor game in which a metal ball  is thrown to get close to a wooden ball called the pig</p>
+                        <a href="https://www.youtube.com/playlist?list=PLqBIgAb92VnwGOeZ93CilCFRtL_wPWrPb" target="_blank" class="btn">LEARN MORE</a>
+                    </div>
+                    <img class="ironballimg animated-img" src="imgs/ironball.png" alt="Iron Ball game image" />
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم لعبة كرة السلة -->
+        <section class="basketball animated-section">
+            <div class="container">
+                <div class="title"><h2>Basketball</h2></div>
+                <div class="preview">
+                    <div>
+                        <p>Definition: A team game where 5 players aim to score points by putting the ball into the opposing basket.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLqBIgAb92VnwyvtX_gUcoROefH6V0Mn9k" target="_blank" class="btn">LEARN MORE</a>
+                    </div>
+                    <img class="basketballimg animated-img" src="imgs/basketball.png" alt="Basketball game image" />
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم سباق الحواجز -->
+        <section class="obstacle-race animated-section">
+            <div class="container">
+                <div class="title"><h2>Obstacle Race</h2></div>
+                <div class="preview">
+                    <div>
+                        <p>A running sport with hurdles to jump over. The goal is to complete the course in the shortest time.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLqBIgAb92VnzSLqQYJD0Byq5O9epuSyRo" target="_blank" class="btn">LEARN MORE</a>
+                    </div>
+                    <img class="obstacle-raceimg animated-img" src="imgs/obstacle-race.png" alt="Obstacle Race game image" />
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم رمي المطرقة -->
+        <section class="hammer-throw animated-section">
+            <div class="container">
+                <div class="title"><h2>Hammer Throw</h2></div>
+                <div class="preview">
+                    <div>
+                        <p>An individual sport where competitors throw a heavy metal object called the "hammer" as far as possible.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLuDHYuTJaoHFszRgoPe09-ZeiBAwJdhhX" target="_blank" class="btn">LEARN MORE</a>
+                    </div>
+                    <img class="hammer-throwimg animated-img" src="imgs/hammer-throw.png" alt="Hammer Throw game image" />
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم لعبة كرة القدم -->
+        <section class="football animated-section">
+            <div class="container">
+                <div class="title"><h2>Football</h2></div>
+                <div class="preview">
+                    <div>
+                        <p>Football is a globally loved sport involving two teams of 11 players competing to score the most goals.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLuDHYuTJaoHE9YPQ9pFsJip9mdY0UnivC" target="_blank" class="btn">LEARN MORE</a>
+                    </div>
+                    <img class="footballimg animated-img" src="imgs/football.png" alt="Football game image" />
+                </div>
+            </div>
+        </section>
+        <section class="archery animated-section">
+            <div class="container">
+                <div class="title"><h2>archery</h2></div>
+                <div class="preview">
+                    <div>
+                        <p>Shooting is the sport of using firearms for specific purposes, which may be short or sporting, and perhaps in the present bathroom.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLqBIgAb92VnzrC1r_2xDKpPWZWkjLKPm7" target="_blank" class="btn">LEARN MORE</a>
+                    </div>
+                    <img class="archery animated-img" src="imgs/archery.png" alt="Hammer Throw game image" />
+                </div>
+            </div>
+        </section>
+        <section class="Swimming animated-section">
+            <div class="container">
+                <div class="title"><h2>Swimming</h2></div>
+                <div class="preview">
+                    <div>
+                        <p>Swimming is a widely practiced activity for recreation as well as a world and Olympic sport. There are many benefits to the sport, as well as risks when the swimmer is not careful.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLqBIgAb92Vnx0xRFPw3PlcBwY6bsEV_DI" target="_blank" class="btn">LEARN MORE</a>
+                    </div>
+                    <img class="archery animated-img" src="imgs/Swimming.png" alt="Hammer Throw game image" />
+                </div>
+            </div>
+           </section>
+    </main>
+</body>
+</html>

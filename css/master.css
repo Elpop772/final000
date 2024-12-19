@@ -1,0 +1,691 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+* {
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing:border-box;
+    transition:0.3s;
+}
+/*دي اللعبه اللي ضفناها*/
+.fit {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.fit h2 {
+    color:gold;
+}
+.fit p{
+    color:#f4f4f4;
+    margin-bottom:6px;
+}
+#minutes {
+    margin-bottom: 3px;
+    background: linear-gradient(to bottom right, #1a202c, #2d3748);
+}
+.input btn{
+    width:100px;
+}
+.game {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+  .game h1 {
+        color:gold;
+    }
+    .game p {
+        color:#f4f4f4;
+    }
+
+.btn-game {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+   
+    width: 250px;
+    color: #fff;
+    background: linear-gradient(to bottom right, #1a202c, #2d3748);
+    border: 1px solid #000000;
+}
+
+btn-game:hover {
+    background-color: gold;
+}
+#result {
+    margin-top: 20px;
+    color:white;
+}
+/*لحد هنا اللعبه*/
+.continar {
+    max-width: 1100px;
+    margin: auto;
+}
+/*repeted items*/
+.primary-text{
+    color:gold;
+}
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border:none;
+    border-radius:15px;
+}
+.primary{
+    color:#fff;
+    border:1px solid #fff;
+}
+.btn {
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top:6px;
+}
+.next-btn1{
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 7px;
+    margin-top: 9px;
+  margin-left: 1120px;
+  text-align:center;
+}
+.next-btn2 {
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 7px;
+   margin-top:800px;
+   margin-right:9px;
+    text-align: center;
+}
+    .primary:hover, .btn:hover{
+        background-color:gold;
+    }
+.primary:hover, .next-btn1:hover {
+    background-color: gold;
+}
+.primary:hover, .next-btn2:hover {
+    background-color: gold;
+}
+    /*home-page*/
+    /*header-start*/
+   .home {
+        height:100%;
+        background: url(../imgs/home.png) center center/cover no-repeat;
+        position: relative;
+    }
+body {
+    font-family: "Quicksand", sans-serif;
+    background: linear-gradient(to bottom right, #1a202c, #2d3748);
+}
+@media only screen and (min-width: 900px) {
+    .container{
+         width:100%;
+        height:100%;
+        
+    }
+    .home {
+        width:100%;
+        height:100%;
+        
+    }
+    .about {
+        width: 100%;
+        height: 100%;
+        
+    }
+}
+ul{
+     list-style:none;
+ }
+ a{
+    text-decoration:none;
+ }
+ .navbar ul li a{
+     padding:15px 20px;
+     color:#fff;
+     font-weight:900;
+ }
+.navbar ul li a:hover{
+    border-bottom:2px solid  #ff0000;    
+}
+    .navbar {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.navbar img{
+    width:80px;
+    margin-left:100px;
+}
+.navbar ul{
+    display:flex;
+    margin-right:100px;
+}
+
+.contact {
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-weight:900;
+    font-size:20;
+    height:80%;
+}
+.contact h1{
+    font-size:50px;
+    color:white;
+}
+.contact p{
+    margin:15px 0;
+    color:whitesmoke;
+}
+.home::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color:rgb(0,0,0,0.6);
+}
+header *{
+    z-index:10;
+}
+/*header end*/
+.about-contact {
+    background: gold;
+    height: 2px;
+    border: none;
+    border-radius: 5px;
+}
+/*home-page-end*/
+/*sports start*/
+/*ironball start*/
+.ironball {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to bottom right, #1a202c, #2d3748);
+    background-size: cover;
+    background-position: center;    
+}
+.title{
+    text-align:center;
+    margin-bottom:4rem;
+}
+.ironball h2{
+    font-size:40px;
+    color:gold;
+    margin-bottom:20px;
+}
+.ironball .title p{
+    font-size:14px;
+    color:#9a9a9a;
+    font-weight:600;
+}
+.ironball .preview {
+    display:flex;
+    justify-content:space-between;
+    color:#f4f4f4;
+}
+.ironball .preview p{
+    margin-right:7rem;
+    font-weight:500;
+    line-height:1.6;
+}
+    .ironball .preview img {
+        margin-bottom: 45px;
+        margin-right: 20px;
+        width: 400px;
+        height: 470px;
+    }
+    /*ironbal end*/
+    /*basketball start*/
+.basketball {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #1a202c, #2d3748);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.basketball h2 {
+    font-size: 40px;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.basketball .title p {
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 600;
+}
+
+.basketball .preview {
+    display: flex;
+    justify-content: space-between;
+    color: #f4f4f4;
+}
+
+    .basketball .preview p {
+        margin-right: 7rem;
+        font-weight: 500;
+        line-height: 1.6;
+    }
+    .basketball .preview img {
+        margin-bottom: 45px;
+        margin-right: 20px;
+        width: 400px;
+        height: 470px;
+    }
+    /*basketball end*/
+/*obstacle race start*/
+.obstacle-race {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #1a202c, #2d3748);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.obstacle-race h2 {
+    font-size: 40px;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.obstacle-race .title p {
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 600;
+}
+
+.obstacle-race .preview {
+    display: flex;
+    justify-content: space-between;
+    color: #f4f4f4;
+}
+
+    .obstacle-race .preview p {
+        margin-right: 7rem;
+        font-weight: 500;
+        line-height: 1.6;
+    }
+    .obstacle-race .preview img {
+        margin-bottom: 45px;
+        margin-right: 20px;
+        width: 400px;
+        height: 470px;
+    }
+/*obstacle race end*/
+/*hammer-throw start*/
+.hammer-throw {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #1a202c, #2d3748);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.hammer-throw h2 {
+    font-size: 40px;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.hammer-throw .title p {
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 600;
+}
+
+.hammer-throw .preview {
+    display: flex;
+    justify-content: space-between;
+    color: #f4f4f4;
+}
+
+    .hammer-throw .preview p {
+        margin-right: 7rem;
+        font-weight: 500;
+        line-height: 1.6;
+    }
+
+    .hammer-throw .preview img {
+        margin-bottom: 45px;
+        margin-right: 20px;
+        width: 400px;
+        height: 470px;
+    }
+/*hammer-throw end*/
+/*football start*/
+.football {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #1a202c, #2d3748);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.football h2 {
+    font-size: 40px;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.football .title p {
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 600;
+}
+
+.football .preview {
+    display: flex;
+    justify-content: space-between;
+    color: #f4f4f4;
+}
+
+    .football .preview p {
+        margin-right: 7rem;
+        font-weight: 500;
+        line-height: 1.6;
+    }
+
+    .football .preview img {
+        margin-bottom: 45px;
+        margin-right: 20px;
+        width: 400px;
+        height: 470px;
+    }   
+/*football end*/
+.archery {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #1a202c, #2d3748);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.archery h2 {
+    font-size: 40px;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.archery .title p {
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 600;
+}
+
+.archery .preview {
+    display: flex;
+    justify-content: space-between;
+    color: #f4f4f4;
+}
+
+    .archery .preview p {
+        margin-right: 7rem;
+        font-weight: 500;
+        line-height: 1.6;
+    }
+
+    .archery .preview img {
+        margin-bottom: 45px;
+        margin-right: 20px;
+        width: 400px;
+        height: 470px;
+    }   
+    /*الرمايه خلصت*/
+.Swimming {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #1a202c, #2d3748);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.Swimming h2 {
+    font-size: 40px;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.Swimming .title p {
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 600;
+}
+
+.Swimming .preview {
+    display: flex;
+    justify-content: space-between;
+    color: #f4f4f4;
+}
+
+    .Swimming .preview p {
+        margin-right: 7rem;
+        font-weight: 500;
+        line-height: 1.6;
+    }
+
+    .Swimming .preview img {
+        margin-bottom: 45px;
+        margin-right: 20px;
+        width: 400px;
+        height: 470px;
+    }   
+    /*sports end*/
+    /*contact start*/
+.container {
+    min-height: 100%;
+    background: linear-gradient(to bottom right, #1a202c, #2d3748);
+    position: relative;
+    padding: 20px;
+}
+.responsive-badge {
+    position: absolute;
+    left: -30px;
+    background-color: #e91e63;
+    color: white;
+    padding: 5px 30px;
+    transform: rotate(-45deg);
+    font-weight: bold;
+}
+
+.content {
+    max-width: 1200px;
+    padding: 40px 20px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    color: #a0aec0;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-info, .contact-form {
+    width: 100%;
+}
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.icon {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 15px;
+}
+.contact-details p {
+    color: #a0aec0;
+}
+
+.contact-form {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 2px solid #2d3748;
+    padding: 30px;
+    border-radius: 8px;
+    color: #a0aec0;
+}
+
+    .contact-form h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        background-color: transparent;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #e2e8f0;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    .form-group textarea {
+        height: 100px;
+    }
+    fullname{
+        color:#f4f4f4;
+    }
+    .copy{
+        line-height:1.6;        color:#f4f4f4;
+        display:flex;
+        flex-direction:column;
+    }
+button {
+    background-color: #00b5d8;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+    button:hover {
+        background-color: #00a0bc;
+    }
+    /*contact end*/
+.about-contact{
+    background:gold;
+    height:2px;
+    border:none;
+    border-radius:5px;
+}
+/*about start*/
+/* تنسيق القسم */
+.about {
+    background: linear-gradient(to bottom right, #1a202c, #2d3748);
+}
+ 
+    /* تنسيق العناوين */
+    .about h2 {
+        font-size: 2.5em;
+        color: gold; /* لون العنوان */
+        text-align: center; /* محاذاة النص في المنتصف */
+        margin-bottom: 20px; /* المسافة أسفل العنوان */
+    }
+
+    .about h3 {
+        font-size: 1.8em;
+        color: gold; /* لون العناوين الفرعية */
+        padding: 0px 40px;
+    }
+
+    /* تنسيق الفقرات */
+    .about p {
+        font-size: 1.2em;
+        color: #fff;
+        line-height: 1.6;
+        padding: 0px 40px;
+    }
+    .about ul li {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        position: relative;
+        color: #fff;
+        padding: 0px 80px;
+    }
+
+        .about ul li:before {
+            content: "✔"; /* رمز التحقق بجانب كل عنصر */
+            color: gold; /* لون الرمز */
+            position: absolute;
+            left: 0;
+            padding: 0px 60px;
+        }
+
+    /* التأثيرات عند التمرير */
+    #about:hover {
+        background-color: #e1e1e1; /* تغيير اللون عند التمرير */
+    }
+
+    /*about end*/
